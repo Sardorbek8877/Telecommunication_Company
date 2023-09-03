@@ -41,8 +41,8 @@ public class SimCard extends AbsEntity implements UserDetails {
 
     private String pinCode;
     ///////////////// Ko'ngil ochar xizmatlar ro'yhati/////////////
-//    @ManyToMany
-//    private Set<EntertainingService> entertainingServices;
+    @ManyToMany
+    private Set<EntertainingService> entertainingServices;
 
     private double amountMb;
     private double amountMinute;
