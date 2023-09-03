@@ -11,6 +11,7 @@ import uz.bek.telecommunication_company.entity.template.AbsEntity;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 
 @Data
 @AllArgsConstructor
@@ -40,7 +41,7 @@ public class SimCard extends AbsEntity implements UserDetails {
     private double balance;
 
     private String pinCode;
-    ///////////////// Ko'ngil ochar xizmatlar ro'yhati/////////////
+    ///////////////// List of Entertaining Services/////////////
     @ManyToMany
     private Set<EntertainingService> entertainingServices;
 
